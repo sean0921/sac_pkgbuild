@@ -10,7 +10,7 @@ url="http://ds.iris.edu/ds/nodes/dmc/forms/sac/"
 license=('custom')
 depends=('libx11' 'ncurses' 'readline')
 source=("local://sac-${pkgver}-source.tar.gz")
-md5sums=('627d8b239dd6b70dad8a7bfd6e5e7c7f')
+sha256sums=('10e718c78cbbed405cce5b61053f511c670a85d986ee81d45741f38fcf6b57d5')
 
 prepare() {
   cd "${srcdir}/${_pkgname}-${pkgver}"
