@@ -3,7 +3,7 @@
 pkgname=sac-iris
 _pkgname=sac
 pkgver=101.6a
-pkgrel=1
+pkgrel=2
 pkgdesc="The Seismic Analysis Code (SAC) is one of the most widely used analysis packages for regional and teleseismic seismic data."
 arch=(x86_64)
 url="http://ds.iris.edu/ds/nodes/dmc/forms/sac/"
@@ -15,8 +15,11 @@ sha256sums=('10e718c78cbbed405cce5b61053f511c670a85d986ee81d45741f38fcf6b57d5')
 prepare() {
   cd "${srcdir}/${_pkgname}-${pkgver}"
   patch -p1 < ../../0001-Fix-missing-DESTDIR-variable-in-Makefile.patch
+  patch -p1 < ../../0002-correct-name-of-autoreconf-file-configure.ac.patch
+  patch -p1 < ../../0003-correct-automake-variable-syntax.patch
   rm -vf bin/sac-config bin/sacinit.csh bin/sacinit.sh
   cd "${srcdir}/${_pkgname}-${pkgver}"
+  autoreconf -fiv
   ./configure CFLAGS="-fcommon" --prefix /opt/sac/ --enable-readline
 }
 
