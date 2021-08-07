@@ -1,3 +1,5 @@
-sac-*-source.tar.gz
+sac-*.tar.gz
+sac-101.6a-source.tar.gz
+sac-102.0.tar.gz
 *.pkg.tar.xz
 *.pkg.tar.zst
