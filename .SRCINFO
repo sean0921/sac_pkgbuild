@@ -1,7 +1,7 @@
 pkgbase = sac-iris
 	pkgdesc = The Seismic Analysis Code (SAC) is one of the most widely used analysis packages for regional and teleseismic seismic data.
 	pkgver = 102.0
-	pkgrel = 1
+	pkgrel = 2
 	url = http://ds.iris.edu/ds/nodes/dmc/forms/sac/
 	arch = x86_64
 	license = custom

@@ -3,7 +3,7 @@
 pkgname=sac-iris
 _pkgname=sac
 pkgver=102.0
-pkgrel=1
+pkgrel=2
 pkgdesc="The Seismic Analysis Code (SAC) is one of the most widely used analysis packages for regional and teleseismic seismic data."
 arch=(x86_64)
 url="http://ds.iris.edu/ds/nodes/dmc/forms/sac/"
